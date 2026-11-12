@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Panel de actividades</title>
+  </head>
+  <body>
+     <header>
+  <h1>MI PANEL DE ACTIVIDADES</h1>
+</header>
+
+<main>
+  <section>
+    <h2>Tareas de hoy</h2>
+    <ul>
+      <li>Tomar Examen 1 <span class="badge-prioridad">alta</span></li>
+      <li>Comprar hilo dental <span class="badge-prioridad">baja</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Nueva tarea</h2>
+    <form>
+      <label for="titulo">Título de la tarea</label>
+      <input type="text" id="titulo" required maxlength="80">
+      <br><br>
+
+      <label for="descripcion">Descripción</label>
+      <textarea id="descripcion"></textarea>
+      <br><br>
+
+      <label for="prioridad">Prioridad</label>
+      <select id="prioridad">
+        <option>baja</option>
+        <option>media</option>
+        <option>alta</option>
+      </select>
+
+      <button>Crear tarea</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>Panel de actividades, hecho con HTML</p>
+</footer>
+  </body>
+</html>

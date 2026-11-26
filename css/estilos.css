@@ -1,0 +1,105 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-principal: #1d4ed8;
+  --color-texto: #172033;
+  --color-borde: #cbd5e1;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  color: var(--color-texto);
+  padding: 1rem;
+  margin: 0;
+}
+
+header,
+#cabecera {
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  color: var(--color-principal);
+  font-size: 2rem;
+  margin: 0;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.lista-tareas {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.lista-tareas li,
+.tarjeta-actividad {
+  padding: 1rem;
+  border: 1px solid var(--color-borde);
+  border-radius: 6px;
+}
+
+.barra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 450px;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid var(--color-borde);
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+button {
+  background-color: var(--color-principal);
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.65rem 1.2rem;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #1e40af;
+}
+
+button:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 2.5rem;
+  }
+}
